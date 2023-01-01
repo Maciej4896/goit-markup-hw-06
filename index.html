@@ -467,21 +467,16 @@
         </div>
         <div class="newsletter">
           <p>Zapisz się do newslettera</p>
-
           <form>
-            <ul class="list flex">
-              <li class="flex">
-                <label> <input type="email" name="newsletter-email" placeholder="E-mail" /></label>
-              </li>
-              <li>
-                <button type="submit" name="newsletter-email">
-                  Zapisz się
-                  <svg width="24px" height="24px">
-                    <use href="./images/icons.svg#icon-icon-send" width="24px" height="24px"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
+            <label>
+              <input type="email" name="newsletter-email" placeholder="E-mail" required
+            /></label>
+            <button type="submit" name="newsletter-email">
+              Zapisz się
+              <svg width="24px" height="24px">
+                <use href="./images/icons.svg#icon-icon-send" width="24px" height="24px"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -495,57 +490,58 @@
         </button>
         <form class="modal-form">
           <p>Zostaw swoje dane w formularzu poniżej</p>
-          <ul class="modal-list">
-            <li class="relative-position">
-              <p>Imie</p>
-              <label>
-                <svg width="12px" height="12px" class="modal-icon-person">
-                  <use href="./images/icons.svg#icon-person-icon"></use>
-                </svg>
-                <input type="text" required />
-              </label>
-            </li>
-            <li class="relative-position">
-              <p>Telefon</p>
-              <label>
-                <svg width="12px" height="12px">
-                  <use href="./images/icons.svg#icon-telephone-icon"></use>
-                </svg>
-                <input type="tel" required />
-              </label>
-            </li>
-            <li class="relative-position">
-              <p>Email</p>
-              <label>
-                <svg width="12px" height="12px">
-                  <use href="./images/icons.svg#icon-envelope-icon"></use>
-                </svg>
-                <input type="email" required />
-              </label>
-            </li>
-            <li>
-              <p>Komentarz</p>
-              <label>
-                <textarea rows="5" class="modal-comment" placeholder="Wprowadź tekst"></textarea>
-              </label>
-            </li>
-            <li class="relative-position modal-checkbox">
-              <input id="checkbox" type="checkbox" class="checkbox-input" required />
-              <div class="checkbox-icon">
-                <svg width="16px" height="15px">
-                  <use href="./images/icons.svg#icon-ok-icon" width="16px" height="15px"></use>
-                </svg>
-              </div>
 
-              <label for="checkbox" class="checkbox-label">
-                Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-                <a href="#"> Politykę Prywatności</a>.
-              </label>
-            </li>
-            <li>
-              <button class="modal-submit-button" type="submit">Wyślij</button>
-            </li>
-          </ul>
+          <div class="modal-list">
+            <label class="relative-position">
+              <span>Imie</span>
+              <svg width="12px" height="12px" class="modal-icon-person">
+                <use href="./images/icons.svg#icon-person-icon"></use>
+              </svg>
+              <input type="text" required />
+            </label>
+          </div>
+          <div class="modal-list">
+            <label class="relative-position">
+              <span>Telefon</span>
+              <svg width="12px" height="12px">
+                <use href="./images/icons.svg#icon-telephone-icon"></use>
+              </svg>
+              <input type="tel" required />
+            </label>
+          </div>
+
+          <div class="modal-list">
+            <label class="relative-position">
+              <span>Email</span>
+
+              <svg width="12px" height="12px">
+                <use href="./images/icons.svg#icon-envelope-icon"></use>
+              </svg>
+              <input type="email" required />
+            </label>
+          </div>
+
+          <div class="modal-list">
+            <label class="relative-position">
+              <span>Komentarz</span>
+              <textarea rows="5" class="modal-comment" placeholder="Wprowadź tekst"></textarea>
+            </label>
+          </div>
+
+          <div class="relative-position modal-checkbox">
+            <input id="checkbox" type="checkbox" class="checkbox-input" required />
+            <div class="checkbox-icon">
+              <svg width="16px" height="15px">
+                <use href="./images/icons.svg#icon-ok-icon" width="16px" height="15px"></use>
+              </svg>
+            </div>
+
+            <label for="checkbox" class="checkbox-label">
+              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#"> Politykę Prywatności</a>.
+            </label>
+          </div>
+          <button class="modal-submit-button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
